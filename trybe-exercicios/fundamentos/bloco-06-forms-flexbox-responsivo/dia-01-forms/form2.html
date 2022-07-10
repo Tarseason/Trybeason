@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="get">
+        <label for="nome-completo">Nome Completo
+            <input type="text" nome="nome" id="nome-completo" placeholder="Digite seu nome aqui" required>
+        </label>
+        <br>
+        <label for="input-email">E-mail
+            <input type="email" name="email" id="input-email" placeholder="Digite seu E-mail">
+        </label>
+        <br>
+        <label for="">Estado de Residencia
+            <select name="estado" id="input-estado">
+                <option value="sp">Sao paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="ap">Amapa</option>
+                <option value="mt" selected>Mato Grosso</option>
+            </select>
+        </label>
+        <br>
+        <p>Escolha uma foto para perfil</p>
+        <input type="file" name="foto" id="foto-perfil">
+        <br>
+        <p>Comidas Favoritas</p>
+        <label for="comida1">
+            <input type="radio" id="comida1" name="comida-favorita" value="pizza">Pizza
+        </label>
+        <label for="comida2">
+            <input type="radio" id="comida2" name="comida-favorita" value="pudim" checked>Pudim
+        </label>
+        <label for="comida3">
+            <input type="radio" id="comida3" name="comida-favorita" value="hamburguer">hamburguer
+        </label>
+        <label for="comida4">
+            <input type="radio" id="comida4" name="comida-favorita" value="lasanha">Lasanha
+        </label>
+        <br><br>
+        <p>Escreva algo sobre voce</p>
+        <textarea name="sobrevoce" id="sobrevoce" cols="30" rows="1"></textarea>
+        <br>
+        <p>Digite sua senha</p>
+        <label for="">
+            <input type="password" name="senha" id="input-senha">
+        </label>
+        <br>
+        <label for="checkbox-noticias">
+            <input type="checkbox" name="promocoes" id="checkbox-noticias">Deseja receber promoçoes?
+        </label>
+        <br>
+        <button type="submit">Enviar Formulario</button>
+    </form>
+</body>
+</html>
